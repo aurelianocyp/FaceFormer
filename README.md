@@ -8,8 +8,7 @@
 
 我用的：
 - python 3.8。注释掉requirements中的pickle。注释掉torch torchvision torchaudio。
-- `conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge`
-- 时间会有点长
+- `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113`
 
 ## Dependencies
 
