@@ -27,7 +27,7 @@
 - 换了conda环境后要重新libboost-dev
 
 
-## Data
+## Data可直接跳过这步运行，运行的时候缺什么再回来补什么
 
 ### VOCASET
 
@@ -57,6 +57,8 @@ Download the pretrained models from [biwi.pth](https://drive.google.com/file/d/1
 	python demo.py --model_name vocaset --wav_path "demo/wav/test.wav" --dataset vocaset --vertice_dim 15069 --feature_dim 64 --period 30  --fps 30  --train_subjects "FaceTalk_170728_03272_TA FaceTalk_170904_00128_TA FaceTalk_170725_00137_TA FaceTalk_170915_00223_TA FaceTalk_170811_03274_TA FaceTalk_170913_03279_TA FaceTalk_170904_03276_TA FaceTalk_170912_03278_TA" --test_subjects "FaceTalk_170809_00138_TA FaceTalk_170731_00024_TA" --condition FaceTalk_170913_03279_TA --subject FaceTalk_170809_00138_TA
 	```
 	This script will automatically generate the rendered videos in the `demo/output` folder. You can also put your own test audio file (.wav format) under the `demo/wav` folder and specify the argument `--wav_path "demo/wav/test.wav"` accordingly.
+
+如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
 
 ## Training and Testing on VOCASET
 
