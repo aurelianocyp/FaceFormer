@@ -15,6 +15,13 @@
 - Check the required python packages in `requirements.txt`.
 - ffmpeg
 - [MPI-IS/mesh](https://github.com/MPI-IS/mesh)
+- sudo apt update
+- sudo apt-get install libboost-dev
+- git clone https://github.com/MPI-IS/mesh.git
+- cd mesh
+- python -m pip install pip==22.2.1
+- BOOST_INCLUDE_DIRS=/path/to/boost/include make all
+
 
 ## Data
 
