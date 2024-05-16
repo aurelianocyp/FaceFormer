@@ -23,6 +23,8 @@
 - python -m pip install pip==22.2.1
 - BOOST_INCLUDE_DIRS=/path/to/boost/include make all
 - make tests
+- 如果test时输出为OK (skipped=5)，应该就行了
+- 换了conda环境后要重新libboost-dev
 
 
 ## Data
