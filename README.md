@@ -10,6 +10,7 @@
 - python 3.7。注释掉requirements中的pickle。注释掉torch torchvision torchaudio。
 - 不要4090！！！！用2080ti
 - `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113`
+- 不要用pyopengl3.1.0，会报fail render。用3.1.4，虽然会说pyrender要求3.1.0，但没关系。
 
 ## Dependencies
 
