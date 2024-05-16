@@ -29,7 +29,7 @@
 - 当mesh企图改变现有环境时，最好通过注释requirement内内容阻止他
 
 
-## Data不可直接跳过这步运行，即使只运行demo
+## Data只运行demo时，除了data verts都需要下载
 
 ### VOCASET
 
