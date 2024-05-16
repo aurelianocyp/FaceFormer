@@ -143,5 +143,5 @@ Download the pretrained models from [biwi.pth](https://drive.google.com/file/d/1
 - Specify the arguments `--dataset`, `--vertice_dim` and `--fps` in `render.py`. Run `render.py` to visualize the results. The rendered videos will be saved to `<dataset_dir>/output`.
 
 ## 记录
-需要保存中间的每一帧obj结果的话使用demo_mine就行
+需要保存中间的每一帧obj结果的话使用demo_mine就行。建议最好使用demo_mine，因为原demo生成的视频没声音。更改也很好更改，在issue里面提到了。
 
