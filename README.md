@@ -1,24 +1,13 @@
-## FaceFormer
 
-PyTorch implementation for the paper:
-
-> **FaceFormer: Speech-Driven 3D Facial Animation with Transformers**, ***CVPR 2022***.
->
-> Yingruo Fan, Zhaojiang Lin, Jun Saito, Wenping Wang, Taku Komura
->
-> [[Paper]](https://arxiv.org/pdf/2112.05329.pdf) [[Project Page]](https://evelynfan.github.io/audio2face/) 
-
-<p align="center">
-<img src="framework.jpg" width="70%" />
-</p>
-
-> Given the raw audio input and a neutral 3D face mesh, our proposed end-to-end Transformer-based architecture, FaceFormer, can autoregressively synthesize a sequence of realistic 3D facial motions with accurate lip movements.
 
 ## Environment
 
 - Ubuntu 18.04.1
 - Python 3.7
 - Pytorch 1.9.0
+
+我用的：
+- python 3.8。注释掉requirements中的pickle
 
 ## Dependencies
 
