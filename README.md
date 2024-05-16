@@ -61,6 +61,8 @@ Download the pretrained models from [biwi.pth](https://drive.google.com/file/d/1
 
 可能需要开启一下代理source /etc/network_turbo，否则会出现connection error报错。
 
+报 Failed to open PLY file.是因为需要把FLAME_sample.ply放在vacaset/templates里
+
 ## Training and Testing on VOCASET
 
 ###  Data Preparation
