@@ -7,7 +7,8 @@
 - Pytorch 1.9.0
 
 我用的：
-- python 3.8。注释掉requirements中的pickle
+- python 3.8。注释掉requirements中的pickle。注释掉torch torchvision torchaudio。
+- `conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge`
 
 ## Dependencies
 
