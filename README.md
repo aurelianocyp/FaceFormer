@@ -142,20 +142,6 @@ Download the pretrained models from [biwi.pth](https://drive.google.com/file/d/1
 
 - Specify the arguments `--dataset`, `--vertice_dim` and `--fps` in `render.py`. Run `render.py` to visualize the results. The rendered videos will be saved to `<dataset_dir>/output`.
 
-## Citation
-
-If you find this code useful for your work, please consider citing:
-```
-@inproceedings{faceformer2022,
-title={FaceFormer: Speech-Driven 3D Facial Animation with Transformers},
-author={Fan, Yingruo and Lin, Zhaojiang and Saito, Jun and Wang, Wenping and Komura, Taku},
-booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-year={2022}
-}
-```
-
-## Acknowledgement
-
-We gratefully acknowledge ETHZ-CVL for providing the [B3D(AC)2](https://data.vision.ee.ethz.ch/cvl/datasets/b3dac2.en.html) database and MPI-IS for releasing the [VOCASET](https://voca.is.tue.mpg.de/) dataset. The implementation of wav2vec2 is built upon [huggingface-transformers](https://github.com/huggingface/transformers/blob/master/src/transformers/models/wav2vec2/modeling_wav2vec2.py), and the temporal bias is modified from [ALiBi](https://github.com/ofirpress/attention_with_linear_biases). We use [MPI-IS/mesh](https://github.com/MPI-IS/mesh) for mesh processing and [VOCA/rendering](https://github.com/TimoBolkart/voca) for rendering. We thank the authors for their excellent works. Any third-party packages are owned by their respective authors and must be used under their respective licenses.
-
+## 记录
+需要保存中间的每一帧obj结果的话使用demo_mine就行
 
