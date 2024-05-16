@@ -1,5 +1,5 @@
 numpy
-scipy==1.7.1
+scipy
 librosa==0.8.1
 tqdm
 pickle
