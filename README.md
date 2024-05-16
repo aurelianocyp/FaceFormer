@@ -60,6 +60,8 @@ Download the pretrained models from [biwi.pth](https://drive.google.com/file/d/1
 
 如果出现了osmesa报错，则apt-get install -y python-opengl libosmesa6
 
+可能需要开启一下代理source /etc/network_turbo，否则会出现connection error报错。
+
 ## Training and Testing on VOCASET
 
 ###  Data Preparation
