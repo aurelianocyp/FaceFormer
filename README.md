@@ -24,6 +24,7 @@
 - make tests
 - 如果test时输出为OK (skipped=5)，应该就行了
 - 换了conda环境后要重新libboost-dev
+- 当mesh企图改变现有环境时，最好通过注释requirement内内容阻止他
 
 
 ## Data可直接跳过这步运行，运行的时候缺什么再回来补什么
