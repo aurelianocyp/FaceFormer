@@ -9,11 +9,12 @@
 我用的：
 - python 3.8。注释掉requirements中的pickle。注释掉torch torchvision torchaudio。
 - `conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge`
+- 时间会有点长
 
 ## Dependencies
 
-- Check the required python packages in `requirements.txt`.
-- ffmpeg
+- pip install -r requirements.txt
+- conda install ffmpeg
 - [MPI-IS/mesh](https://github.com/MPI-IS/mesh)
 - sudo apt update
 - sudo apt-get install libboost-dev
@@ -21,6 +22,7 @@
 - cd mesh
 - python -m pip install pip==22.2.1
 - BOOST_INCLUDE_DIRS=/path/to/boost/include make all
+- make tests
 
 
 ## Data
