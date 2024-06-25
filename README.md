@@ -4,12 +4,12 @@
 
 - Ubuntu 18.04.1
 - Python 3.7
-- Pytorch 1.9.0
 
 我用的：
-- python 3.7。注释掉requirements中的pickle。注释掉torch torchvision torchaudio。
+- conda create -n faceformer python=3.7
+- conda activate faceformer
 - 不要4090！！！！用2080ti
-- `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113`
+- pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 - 不要用pyopengl3.1.0，会报fail render。用3.1.4，虽然会说pyrender要求3.1.0，但没关系。
 
 ## Dependencies
@@ -26,7 +26,7 @@
 - make tests
 - 如果test时输出为OK (skipped=5)，应该就行了
 - 换了conda环境后要重新libboost-dev
-- 当mesh企图改变现有环境时，最好通过注释requirement内内容阻止他
+- 当mesh企图改变现有环境时，最好通过注释requirement内容阻止他
 
 
 ## Data只运行demo时，除了data verts都需要下载
