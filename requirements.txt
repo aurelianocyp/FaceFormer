@@ -11,4 +11,4 @@ transformers==4.6.1
 trimesh==3.9.27
 pyrender==0.1.45
 opencv-python
-pyopengl==3.1.4
+#pyopengl==3.1.4

@@ -4,36 +4,37 @@
 
 - Ubuntu 18.04.1
 - Python 3.7
+- 不要4090！！！！用2080ti
 
 我用的：
 - conda create -n faceformer python=3.7
 - conda activate faceformer
-- 不要4090！！！！用2080ti
 - pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 - 不要用pyopengl3.1.0，会报fail render。用3.1.4，虽然会说pyrender要求3.1.0，但没关系。
-
-## Dependencies
-
 - pip install -r requirements.txt
+- pip install pyopengl==3.1.4
 - conda install ffmpeg
-- [MPI-IS/mesh](https://github.com/MPI-IS/mesh)
 - sudo apt update
 - sudo apt-get install libboost-dev
 - git clone https://github.com/MPI-IS/mesh.git
 - cd mesh
+- 清空mesh的requirements
 - python -m pip install pip==22.2.1
+- pip install pyyaml zmq
 - BOOST_INCLUDE_DIRS=/path/to/boost/include make all
 - make tests
 - 如果test时输出为OK (skipped=5)，应该就行了
 - 换了conda环境后要重新libboost-dev
-- 当mesh企图改变现有环境时，最好通过注释requirement内容阻止他
 
 
-## Data只运行demo时，除了data verts都需要下载
+
+## Data(只运行demo时，除了data verts都需要下载)
 
 ### VOCASET
 
-Request the VOCASET data from [https://voca.is.tue.mpg.de/](https://voca.is.tue.mpg.de/). Place the downloaded files `data_verts.npy`, `raw_audio_fixed.pkl`, `templates.pkl` and `subj_seq_to_idx.pkl` in the folder `VOCASET`. Download "FLAME_sample.ply" from [voca](https://github.com/TimoBolkart/voca/tree/master/template) and put it in `VOCASET/templates`.
+Place `data_verts.npy`, `raw_audio_fixed.pkl`, `templates.pkl` and `subj_seq_to_idx.pkl` in the folder `VOCASET`. 
+
+Download "FLAME_sample.ply" from [voca](https://github.com/TimoBolkart/voca/tree/master/template) and put it in `VOCASET/templates`.
 
 ### BIWI
 
@@ -73,7 +74,7 @@ Download the pretrained models from [biwi.pth](https://drive.google.com/file/d/1
 - Read the vertices/audio data and convert them to .npy/.wav files stored in `vocaset/vertices_npy` and `vocaset/wav`:
 
 	```
-	cd VOCASET
+	cd vocaset
 	python process_voca_data.py
 	```
 
